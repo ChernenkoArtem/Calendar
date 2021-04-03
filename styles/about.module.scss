@@ -1,0 +1,18 @@
+.about {
+  max-width: 1336px;
+  margin: 0 auto;
+  color: #3D3D3D;
+  &__title{
+    font-size: 34px;
+    font-family: bold 34px/100px Rubik;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 0 10px;
+    &__title{
+      font-size: 1.5rem;
+    }
+  }
+}

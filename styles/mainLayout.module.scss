@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1700px;
+  margin: 0 auto;
+  font-family: medium 28px/30px Rubik;;
+  padding: 50px 0 50px;
+  &__nav {
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 0.56px;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    a {
+      margin-right: 70px;
+    }
+    a:hover {
+      opacity: 0.6;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 35px 5px 35px;
+
+    &__nav {
+      font-size: 20px;
+    }
+
+    &__logo {
+      width: 90px;
+    }
+
+    &__nav {
+      a {
+        margin-right: 30px;
+      }
+    }
+  }
+}

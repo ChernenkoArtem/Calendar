@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: calc(100vh - 154px);
+  background:  url("../public/Untitled-1Artboard 1 copy.png") no-repeat center center fixed;
+  background-size: cover;
+  &__inner_right {
+    display: flex;
+    justify-content: center;
+    width: 695px;
+    padding-top: 192px;
+    background-color: #272829;
+  }
+  .homepage_text {
+    max-width: 518px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 192px 32px 0 0;
+    &__title{
+      font-size: 50px;
+      font-weight: 700;
+      color: #FDD000;
+      text-transform: uppercase;
+      margin: 0 0 44px;
+    }
+    &__description{
+      font-size: 30px;
+      font-weight: 300;
+      color: #DFDFDF;
+      letter-spacing: 0.6px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .homepage_text, .container__inner_right {
+    padding-top: 12%;
+  }
+
+}
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100%;
+    &__inner_right {
+      padding: 0;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .homepage_text {
+      padding: 0 0 50px 0;
+      margin: 0 auto;
+      text-align: center;
+        &__title{
+          font-size:2rem;
+        }
+        &__description{
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+}
